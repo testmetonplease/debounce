@@ -2,13 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MatButtonModule } from '@angular/material';
+import { DebounceClickDirective } from './debounce.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DebounceClickDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
